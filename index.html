@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Their First Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Enter Their First Name</h1>
+        <div class="image-container">
+            <img id="game-image" src="tuco.png" alt="Game Image">
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-answer" placeholder="Type the name here">
+            <button id="submit-answer">Submit</button>
+        </div>
+        <div>
+            <p>Time Left: <span id="time-left">45</span> seconds</p>
+        </div>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h1>Results</h1>
+        <p id="final-score"></p>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Your Answer</th>
+                    <th>Expected Answer</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Results will be inserted here -->
+            </tbody>
+        </table>
+        <div id="share-link">
+            <!-- Share link will be generated here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
