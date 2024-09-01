@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write the First Name of Characters in the Photo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Write the First Name of Characters in the Photo</h1>
+        <div id="timer">Time left: <span id="time-left">45</span> seconds</div>
+        <div class="image-container">
+            <img id="game-image" src="" alt="Image not found">
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-answer" placeholder="Type the name here" autofocus>
+            <button id="submit-answer">Submit</button>
+        </div>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h2>Results</h2>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Your Answer</th>
+                    <th>Expected Answer</th>
+                    <th>Correct?</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="final-score"></div>
+        <div id="share-link"></div> <!-- Added for shareable link -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
